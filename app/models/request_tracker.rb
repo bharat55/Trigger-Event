@@ -1,0 +1,2 @@
+class RequestTracker < ApplicationRecord
+end
