@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_15_103620) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_16_080150) do
+  create_table "events", force: :cascade do |t|
+    t.datetime "published_at"
+  end
+
   create_table "request_trackers", force: :cascade do |t|
     t.datetime "datetime"
   end
